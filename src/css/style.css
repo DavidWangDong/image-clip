@@ -1,0 +1,516 @@
+		*{
+			margin:0;
+			padding:0;
+		}
+		img{
+			vertical-align: middle;
+		}
+		.maiContain{
+			width: 100%;
+			margin:0 auto;
+			height: 100%;
+		}
+		.pos_abs{
+			position: absolute;
+			z-index: 1;
+		}
+		.pos_relative{
+			position: relative;
+			z-index: 1;
+		}
+		.ds_none{
+			display: none;
+		}
+
+		@-webkit-keyframes moveThrough {
+		  0% {-webkit-transform:translateX(0);}
+		  100% {opacity: 1;-webkit-transform:translateX(-7rem);}
+		}
+		@-webkit-keyframes fudong{
+			0%	 {-webkit-transform:translateY(-5%);}
+			100% {-webkit-transform:translateY(5%);opacity: 1;}	
+		}
+		#app{
+			width: 6.4rem;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			
+			margin:0 auto;
+		}
+		.page1{
+			z-index: 10;
+		}
+		.page{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		
+		.component-fade-enter-active, .component-fade-leave-active {
+		  transition: all 1s ease;
+		}
+		.component-fade-enter{
+		  /*transform:translateX(6.4rem); */
+		}
+		.component-fade-leave-to{
+		  transform:translateX(-6.4rem); 
+		}
+		.animate img{
+			display: block;
+			width: 100%;
+			/*height: 100%;*/
+		}
+		.enter-animate{
+			opacity: 0;
+		}
+		.modal{
+			z-index: 999;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.78);
+			-webkit-animation:fadeIn .3s ease-in 0s 1 normal forwards;
+			overflow: auto;
+			position: fixed;
+			top:0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+		
+		.before:before{
+			content: '';
+			display: table;
+		}
+		.p1-logo{
+			width: 5.99rem;
+			top:0.27rem;
+			left: 0.2rem;
+		}
+
+		.p1-animate1 {
+			width: 0.8rem;
+			top:0.95rem;
+			left: 0.73rem;
+			-webkit-animation:fadeIn 1s ease-in .5s infinite forwards alternate;
+		}
+
+		.p1-animate2 {
+			width: 0.37rem;
+			top:2.38rem;
+			left: 0.18rem;
+			-webkit-animation:fadeIn 2s ease-in .1s infinite forwards alternate;
+		}
+
+		.p1-animate3 {
+			width: 0.4rem;
+			top:0.74rem;
+			left: 2.5rem;
+			-webkit-animation:fadeIn 1.5s ease-in 1.3s infinite forwards alternate;
+		}
+
+		.p1-animate4 {
+			width: 0.61rem;
+			top:1.84rem;
+			left: 2.06rem;
+			-webkit-animation:fadeIn 1.9s ease-in 2s infinite forwards alternate;
+		}
+
+		.p1-animate5 {
+			width: 0.53rem;
+			top:0.4rem;
+			left: 4.24rem;
+			-webkit-animation:fadeIn 3s ease-in .5s infinite forwards alternate;
+		}
+
+		.p1-animate6 {
+			width: 0.85rem;
+			top:2.11rem;
+			left: 3.72rem;
+			-webkit-animation:fadeIn 2s ease-in .2s infinite forwards alternate;
+		}
+
+		.p1-animate7 {
+			width: 0.5rem;
+		    top: 0.75rem;
+		    right: -0.1rem;
+		    -webkit-animation:fadeIn 4s ease-in 1.2s infinite forwards alternate;
+		}
+
+		.p1-animate8 {
+			width: 0.33rem;
+		    top: 3.2rem;
+		    right: 0.46rem;
+		    -webkit-animation:fadeIn 3s ease-in .1s infinite forwards alternate;
+		}
+		.p1-animate9{
+			width: 4.77rem;
+		    top: 4.54rem;
+		    left: 0.9rem;
+		    -webkit-animation:bounceIn 2s ease-in .5s 1 forwards alternate;
+		}
+
+		.p1-animate10{
+			width: 1.94rem;
+		    top: 2.88rem;
+		    left: 2.31rem;
+		    -webkit-animation: fadeIn 1s ease-in 2.5s 1 forwards alternate;
+		    z-index: 3;
+		}
+
+		.p1-animate11{
+			width: 1.2rem;
+		    top: 7.8rem;
+		    left: 2.68rem;
+		    -webkit-animation:zoomIn .5s ease-in 2s 1 forwards alternate;
+		    z-index: 5;
+		}
+		.p1-animate12{
+			width: 1.43rem;
+			top:9.93rem;
+			right:-1.43rem;
+			
+			 -webkit-animation:moveThrough 8s linear 3s infinite forwards;
+		}
+		.p1-animate13{
+			width: 1.16rem;
+			top:9.91rem;
+			right:-1.16rem;
+			
+			 -webkit-animation:moveThrough 7s linear 2s infinite forwards;
+		}
+		.p1-animate14{
+			width:0.81rem;
+			top:9.45rem;
+			right:-0.81rem;
+			
+			 -webkit-animation:moveThrough 6s linear .5s infinite forwards;
+		}
+		.p1-animate15{
+			width:0.65rem;
+			top:9.09rem;
+			right:-0.65rem;
+			
+			 -webkit-animation:moveThrough 5s linear 1.8s infinite forwards;
+		}
+		.p1-animate16{
+			width: 0.98rem;
+			bottom: 0.17rem;
+			z-index: 10;
+			left: 2.72rem;
+		}
+		.smHeader{
+			width: 100%;
+		}
+		.smBody{
+			width: 100%;
+			height: 7.9rem;
+			overflow-x:hidden;
+			overflow-y:auto;
+			margin-top: 0.3rem;
+		}
+		.shuoMing{
+			width: 5.22rem;
+			top:0.34rem;
+			left: 0.54rem;
+
+		}
+		.shuoMingClose{
+			width: 0.52rem;
+		    height: 0.66rem;
+		    top: -0.1rem;
+		    right: 0.05rem;
+		    z-index: 5;
+		}
+
+		.detailAlert{
+			width: 4.62rem;
+			left: 50%;
+			top:50%;
+			margin-left: -2.31rem;
+			margin-top: -4.555rem;
+		}
+
+		.detailClose{
+			width: 1.8rem;
+			height: 0.78rem;
+			bottom: 0;
+			left: 1.38rem;
+		}
+
+		.pointerWrap{
+			width: 2.2rem;
+			bottom: 0.2rem;
+			left: 50%;
+			margin-left: -1.1rem;
+		}
+
+		.addSound{
+			width: 1.5rem;
+			height: 1.5rem;
+			background:rgba(255,255,255,0.8);
+			border-radius: 1.5rem; 
+			overflow: hidden;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			margin: 0 auto;
+		}
+		.addSound p{
+			width: 1.12rem;
+		    height: 1.12rem;
+		    text-align: center;
+		    color: #fff;
+		    background: #f45858;
+		    line-height: 1.02rem;
+		    font-size: 0.9rem;
+		    border-radius: 1.12rem;
+	        display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    font-weight: bold;
+		}
+		.addSound p.recording{
+			background: #DFD906;
+		}
+		.addSoundWord{
+			width: 100%;
+			text-align: center;
+			font-size: 0.2rem;
+			line-height: 0.3rem;
+			color: #fff;
+			font-weight: bold;
+		    margin-top: 0.3rem;
+		}
+		.selectDeng{
+			width: 100%;
+			top:0;
+		}
+		.selectHeader{
+			    font-size: 0.3rem;
+			    color: #fffc00;
+			    text-align: center;
+			    font-weight: bold;
+			    margin-top: 1rem;
+		}
+		.lunbo{
+			    width: 100%;
+			    height: 5rem;
+			    position: relative;
+			    overflow: hidden;
+			    margin-top: 0.4rem;
+		}
+		.lunboWrap{
+			width: 400%;
+			overflow: hidden;
+		}
+		.lunboItem{
+			width: 6.4rem;
+			float: left;
+		}
+		.lunboInner{
+			width: 3.47rem;
+			margin: 0 auto;
+		}
+		.dengName{
+			font-size: 0.25rem;
+		    color: #fff;
+		    text-align: center;
+		    width: 100%;
+		    bottom: 0;
+		    left: 0;
+		    font-weight: bold;
+		}
+		.slide{
+			top: 50%;
+		    color: #fff;
+		    font-size: 0.8rem;
+		    margin-top: -0.4rem;
+		}
+		.slidePrev{
+			left: 0;
+		}
+		.slideNext{
+			right: 0;
+		}
+		.navIcon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			bottom:0;
+		}
+		.navIcon li{
+			width: 0.15rem;
+			height: 0.15rem;
+			border-radius: 0.15rem;
+			background: #fff;
+			margin:0 0.05rem;
+		}
+		.navIcon li.active{
+			background: #fef400;
+		}
+
+		.goBack{
+			font-size: 0.2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 0.67rem;
+			height: 0.67rem;
+			border: 2px solid #fff;
+			color:#fff;
+			border-radius: 100%;
+			float: left;
+			margin-top: 0.4rem;
+		}
+		.nextStep{
+			float: left;
+			margin:0 0.5rem;
+		}
+		.mainNav{
+			margin-top: 0.7rem;
+		    margin-left: 1rem;
+		    width: 4.4rem;
+		    overflow: hidden;
+		}
+		.isUp{
+			width: 4.42rem;
+			top:50%;
+			left: 50%;
+			margin-top: -2.1rem;
+			margin-left: -2.21rem;
+		}
+		.isUpClose{
+			width: 0.49rem;
+			height: 0.49rem;
+			top:0.96rem;
+			right: 0.21rem;
+		}
+		.subForm{
+			width: 1.73rem;
+		    height: 0.74rem;
+		    top: 3.45rem;
+		    left: 1.5rem;
+		}
+		.preView{
+			width: 3.47rem;
+			top:50%;
+			left: 50%;
+			margin-top: -2.3rem;
+			margin-left: -1.735rem;
+		}
+		.preWord{
+			width: 100%;
+			text-align: center;
+			bottom:0;
+			left: 0; 
+			font-size: 0.23rem;
+			color: #fff;
+			font-weight: bold;
+		}
+		.prePointer{
+			width: 0.66rem;
+		    bottom: -0.3rem;
+		    right: -0.1rem;
+		    -webkit-animation: swing 1s cubic-bezier(0.18, 0.69, 0.6, 0.91) .5s infinite forwards;
+		}
+		.myInfo{
+			width: 4.75rem;
+			left: 50%;
+			margin-left: -2.375rem;
+			top:0.74rem;
+		}
+		.resClose{
+			top:-0.6rem;
+			right:0rem;
+			color: #fff;
+		}
+		.resInfoWord{
+			width: 100%;
+			text-align: center;
+			font-size: 0.25rem;
+			color: #fff;
+			bottom: -0.2rem;
+		}
+		.resInfoWord .nickname{
+			font-size: 0.3rem;
+			color: #fef30e;
+		}
+		.shareMsg{
+			width: 4.27rem;
+			right: 0;
+			top:0;
+		}
+		.location{
+			bottom: 1rem;
+    		left: 1.2rem;
+		}
+		.type0{
+			width: 0.8rem;
+		    top: 0.68rem;
+		    left: 3.55rem;
+		    -webkit-animation: fudong .8s ease-out .3s infinite forwards alternate;
+		    opacity: 0;
+		}
+		.type1{
+			width: 0.64rem;
+		    top: 2.24rem;
+		    right: 0.4rem;
+		    -webkit-animation: fudong 1s ease-out 0.1s infinite forwards alternate;
+		}
+		.type2{
+			    top: 1.79rem;
+			    left: 1.43rem;
+			    width: 2.35rem;
+			    -webkit-animation: fudong 1.2s ease-out .8s infinite forwards alternate;
+		}
+		.type3{
+		        top: 4.16rem;
+			    left: 0.24rem;
+			    width: 0.97rem;
+			    -webkit-animation: fudong 1.5s ease-out 1s infinite forwards alternate;
+		}
+		.type4{
+			top: 4.73rem;
+		    left: 1.2rem;
+		    width: 1.21rem;
+		    -webkit-animation: fudong .9s ease-out .5s infinite forwards alternate;
+		}
+		.type5{
+			top: 4.4rem;
+			right: 0.71rem;
+		    width: 1.5rem;		
+		    -webkit-animation: fudong 1.3s ease-out 1s infinite forwards alternate;	
+		}
+		.type6{
+			width: 0.9rem;
+		    top: 5.7rem;
+		    left: 3rem;
+		    -webkit-animation: fudong 2s ease-out .7s infinite forwards alternate;
+		}
+		.type7{
+			top: 6.39rem;
+		    left: 0.23rem;
+		    width: 1.42rem;
+		    -webkit-animation: fudong 1.6s ease-out .6s infinite forwards alternate;
+		}
+		.type8{
+		    top: 7.66rem;
+		    left: 4.8rem;
+		    width: 0.72rem;
+		    -webkit-animation: fudong 1.8s ease-out 1.2s infinite forwards alternate;
+		}
+		.type9{
+			top: 1.47rem;
+		    left: 4.24rem;
+		    width: 0.81rem;
+		    -webkit-animation: fudong 2.3s ease-out .5s infinite forwards alternate;
+		}
+		.dianji{
+			color: #fff;
+		    font-size: 0.3rem;
+		    bottom: -0.4rem;
+		    left: -0.3rem;
+		    width: 1.3rem;
+		}
